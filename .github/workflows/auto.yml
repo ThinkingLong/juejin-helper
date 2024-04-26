@@ -19,6 +19,7 @@ env:
   WEIXIN_WEBHOOK: ${{ secrets.WEIXIN_WEBHOOK }}
   WEIXIN_WEBHOOK_2: ${{ secrets.WEIXIN_WEBHOOK_2 }}
   SERVERPUSHKEY: ${{ secrets.SERVERPUSHKEY }}
+  FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
 
 jobs:
   CheckIn:
@@ -31,6 +32,7 @@ jobs:
           cd workflows
           yarn
           yarn checkin
+
 #  SeaGold:
 #    needs: CheckIn
 #    runs-on: ubuntu-latest
